@@ -1,0 +1,243 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+    /* font-family: 'Arial', sans-serif;  */  
+}
+
+.container{
+    background-image: url("workout\ woman\ 2.png");
+    height: 803px;
+    width: 100%;
+    color: white;
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.ima{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 800px;
+    right: 100px;
+    width: 1000px;
+}
+
+h3{
+    font-size: 80px;
+}
+h5{
+    font-size: 20px;
+    padding-top: 0;
+}
+h6{
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 0;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.t {
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.bar {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    display: none;
+    float: right;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-weight: 700;
+    color: white;
+}
+
+ul>li>a {
+    color: white;
+    text-decoration:  none;
+}
+ul>li>a.active{
+    text-decoration: underline #FFED00 2px;
+}
+
+button {
+    width: 100%;
+    max-width: 300px; 
+    height: 60px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #ffdd00;
+    padding-bottom: 8px;
+}
+.cona{
+    padding-top: 950px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+input {
+    width: 1000px;
+    max-width: 400px; 
+    margin: 10px;
+    padding: 18px;
+    font-size: 12px;
+    border-radius: 50px;
+    box-sizing: border-box; 
+    border-color: #ffdd00;
+    color: white;
+    background-color: black;
+}
+
+.fill {
+    width: 100%;
+    max-width: 400px; 
+    box-sizing: border-box;
+}
+
+.image {
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+    overflow: hidden;
+    border-radius: 30px;
+    height: 10px;
+    background-image: url('Mask\ group.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer{
+    padding-left: 50%;
+    padding-right: 40%;
+    padding-top: 10px;
+}
+h5{
+    color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: row;
+        /* text-align: center; */
+    }
+
+    .icon {
+        display: block;
+        float: right;
+    }
+
+    .bar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: flex;
+        background-color: #ffdd00;
+        top: 60px;
+        left: 0;
+    }
+
+    .bar.show {
+        display: flex;
+    }
+
+    .bar li {
+        margin: 10px 0;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    /* h6 {
+        font-size: 0.8em;
+    } */
+
+    .cona{
+        width: 100%;
+        padding-top: 600px;
+    }
+    .ima {
+     max-width: 85%; /* Adjust the maximum width for larger screens */
+     position: absolute; /* Use absolute positioning for larger screens */
+     top: 100%; /* Center the image vertically */
+     transform: translateY(-50%); /* Center the image vertically */
+     right: 40px; /* Adjust the right offset */
+     padding-bottom: 100px;
+        }
+        .footer{
+            margin-right: 50px;
+            margin-left: 0px;
+            padding-left: 120px;
+            padding-right: 50px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="message"]
+        textarea {
+            width:100% ;
+            max-width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 1px solid #ffdd00;
+            box-sizing: border-box;
+            color: white;
+        }
+        .mask{
+            width: 100%;
+            height: 200px;
+        }
+        h6{
+            font-size: 10px;
+            font-weight: bold;
+            padding-top: 0;
+            color: white;
+        }
+    }
